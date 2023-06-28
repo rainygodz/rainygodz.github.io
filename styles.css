@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: black;
+    font-family: "Lexend Mega", sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+p, h5 {
+    font-weight: 100;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    margin-right: 5rem;
+    padding-left: 2rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+header p {
+    display: inline;
+    margin: 0 1.2rem;
+}
+
+.club {
+    background-image: url("images/banner1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 28rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+
+.club .content {
+    background-color: black;
+    opacity: 0.8;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.club .content .text h1{
+    margin-bottom: 1rem;
+}
+
+.media {
+    margin-top: 10rem;
+}
+
+.media h2 {
+    margin-bottom: 1rem;
+}
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.images-container img {
+    width: 25%;
+    height: auto;
+}
+
+.join-us {
+    background-image: url("images/banner2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28rem;
+    width: 100%;
+    margin-top: 10rem;
+    background-position: center;
+}
+
+.join-us .content {
+    background-color: black;
+    opacity: 0.8;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.join-us h1 {
+    margin-bottom: 1rem;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h5 {
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 550px) {
+    html {
+        min-width: 410px;
+        min-height: 915px;
+    }
+
+    header p {
+        margin: 0 0.5rem;
+    }
+
+    header, footer {
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .logo {
+        margin-right: 3rem;
+        padding-left: 1rem;
+        font-size: 2rem;
+    }
+
+    .club .content, .join-us .content {
+        width: 100%;
+    }
+
+    .join-us, .media {
+        margin-top: 4rem;
+    }
+
+    .club, .join-us {
+        height: 20rem;
+    }
+
+    .images-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 50rem;
+    }
+
+    .images-container img {
+        width: 50%;
+        height: auto;
+    }
+}
